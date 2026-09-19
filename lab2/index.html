@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form
+      action="https://httpbin.org/post"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <h1>Форма обратной связи</h1>
+      <div class="fullname">
+        <label class="label" for="fullname">ФИО</label>
+        <input type="text" id="fullname" name="fullname" />
+      </div>
+      <div class="email">
+        <label class="label" for="email">Адрес электронной почты</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Введите email"
+        />
+      </div>
+      <div>
+        <h4>Откуда узнали о нас?</h4>
+        <input type="radio" id="friends" name="about" value="friend" checked />
+        <label for="friends">Рассказали друзья</label>
+        <input type="radio" id="spam" name="about" value="spam" />
+        <label for="spam">Реклама в интернете</label>
+      </div>
+      <div class="complaint">
+        <label class="label" for="complaint">Категория обращения</label>
+        <select name="complaint" id="complaint">
+          <option value="complaint">Жалоба</option>
+          <option value="suggestion">Предложение</option>
+        </select>
+      </div>
+      <div class="textAreaForm">
+        <label class="label" for="textAreaForm">Текст сообщения</label>
+        <textarea name="textAreaForm" id="textAreaForm"></textarea>
+      </div>
+      <div class="fileInput">
+        <label class="label" for="fileInput">Вложения</label>
+        <input type="file" id="fileInput" name="fileInput" />
+      </div>
+      <div class="agreement">
+        <input type="checkbox" name="agreement" id="agreement" />
+        <label for="agreement">Даю согласие на обработку своих данных</label>
+      </div>
+      <div class="send">
+        <input type="submit" value="Отправить" />
+      </div>
+    </form>
+  </body>
+</html>
