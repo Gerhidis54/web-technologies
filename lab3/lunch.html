@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
   </head>
   <body>
     <header>
@@ -163,6 +164,94 @@
             <button>Добавить</button>
           </div>
         </div>
+      </section>
+      <section class="order">
+        <h2>Сделать заказ</h2>
+        <form>
+          <div class="order-form">
+            <h3>Ваш заказ</h3>
+            <label class="label" for="soup">Суп</label>
+            <select name="soup" id="soup">
+              <option value="select">Выберите суп</option>
+              <option value="soup1">Крем-суп из тыквы</option>
+              <option value="soup2">Том Ям с креветками</option>
+              <option value="soup3">Куриный суп с лапшой</option>
+              <option value="soup4">Сырный крем-суп</option>
+              <option value="soup5">Борщ со сметаной</option>
+              <option value="soup6">Грибной крем-суп</option>
+            </select>
+            <label class="label" for="main_food">Главное блюдо</label>
+            <select name="main_food" id="main_food">
+              <option value="select">Выберите главное блюдо</option>
+              <option value="main_food1">Паста Карбонара</option>
+              <option value="main_food2">Куриное карри с рисом</option>
+              <option value="main_food3">Лосось с картофельным пюре</option>
+              <option value="main_food4">Курица терияки с рисом</option>
+              <option value="main_food5">Лазанья Болоньезе</option>
+              <option value="main_food6">Стейк с запечённым картофелем</option>
+            </select>
+            <label class="label" for="drink">Напиток</label>
+            <select name="drink" id="drink">
+              <option value="select">Выберите напиток</option>
+              <option value="drink1">Домашний лимонад</option>
+              <option value="drink2">Облепиховый морс</option>
+              <option value="drink3">Айс-ти с персиком</option>
+              <option value="drink4">Апельсиновый сок</option>
+              <option value="drink5">Капучино</option>
+              <option value="drink6">Какао с маршмеллоу</option>
+            </select>
+            <label class="label" for="comment">Комментарий к заказу</label>
+            <textarea name="comment" id="comment"></textarea>
+          </div>
+          <div class="customer-form">
+            <h3>Ваши данные</h3>
+
+            <label class="label" for="name">Имя</label>
+            <input type="text" name="name" id="name" required />
+            <label class="label" for="email">Почта</label>
+            <input type="email" name="email" id="email" required />
+            <div>
+              <input type="checkbox" name="send_info" id="send_info" />
+              <label class="label" for="send_info"
+                >Получать информацию о скидках и акциях</label
+              >
+            </div>
+            <label class="label" for="phone">Номер телефона</label>
+            <input type="tel" name="phone" id="phone" required />
+            <label class="label" for="address">Адрес доставки</label>
+            <input type="text" name="address" id="address" required />
+            <p class="info">Доставка осуществляется только по Москве</p>
+            <p class="label">Время доставки</p>
+            <div>
+              <input type="radio" name="time_delivery" id="asap" value="asap" />
+              <label for="asap">Как можно скорее</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="time_delivery"
+                id="specified_time"
+                value="specified_time"
+              />
+              <label for="specified_time">К указанному времени</label>
+            </div>
+            <label class="label" for="specific_time_delivery"
+              >Укажите время доставки</label
+            >
+            <input
+              type="time"
+              name="specific_time_delivery"
+              id="specific_time_delivery"
+              min="07:00"
+              max="23:00"
+            />
+            <p class="info">Доступное время доставки с 7:00 до 23:00</p>
+            <div class="send-form">
+              <button type="reset">Сбросить</button>
+              <button type="submit">Отправить</button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer id="contacts">

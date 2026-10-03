@@ -190,10 +190,78 @@ ul {
   section > img {
     width: 100%;
   }
+  form {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 400px) {
   table {
     font-size: 14px;
   }
+}
+
+form {
+  display: flex;
+  gap: 100px;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.order h2 {
+  text-align: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="time"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+.send-form {
+  display: flex;
+  gap: 10px;
+}
+
+.send-form button {
+  flex: 1;
+  padding: 10px;
+}
+
+.info {
+  font-size: 15px;
+  font-style: italic;
+  margin: 0;
+}
+
+form h3 {
+  font-size: 20px;
+}
+
+p.label {
+  margin: 0;
 }
