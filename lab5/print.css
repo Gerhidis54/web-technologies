@@ -1,0 +1,21 @@
+button {
+  display: none;
+}
+
+footer {
+  background-color: white;
+  color: black;
+}
+
+footer a {
+  color: black;
+}
+
+nav {
+  display: none;
+}
+
+.dish {
+  filter: none;
+  border: 1px solid black;
+}
